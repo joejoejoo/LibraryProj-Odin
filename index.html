@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="header"><h1>Your Library</h1></div>
+
+    <div class="overBox">
+      <div class="formPopup" id="myForm">
+        <!-- this div below usto be for, but it was acting weird when we would hit the submit button to recreate the problem just substitue in 'form' for 'div
+          ' and find why it was happening.-->
+        <div class="formContainer">
+          <div>
+            <label for="author"><b>Author</b></label>
+            <input
+              class="inAuthor"
+              type="text"
+              placeholder="Enter author"
+              name="author"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="title"><b>Title </b></label>
+            <input
+              class="inTitle"
+              type="title"
+              placeholder="Enter title"
+              name="tit"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="numOfPgs"><b># of Pages</b></label>
+            <input
+              class="inPages"
+              type="pages"
+              placeholder="Enter number of pages"
+              name="number of pages"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btnSubmit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="BigPopa">
+      <button id="btn">Add book</button>
+    </div>
+
+    <div class="showInfo">
+      <div class="showinfoContent">
+        <h1 class="">
+          Author:
+          <div class="h1AUTHOR"></div>
+        </h1>
+
+        <h1 class="">
+          title:
+          <div class="h1TITLE"></div>
+        </h1>
+
+        <h1 class="">
+          numOfpgs:
+          <div class="h1NUMOFPGS"></div>
+        </h1>
+        <button type="submit" class="closeButton">x</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
